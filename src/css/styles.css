@@ -37,7 +37,7 @@
 }
 
 body {
-  max-width: 1128px;
+  /* max-width: 1128px; */
   margin: 0 auto;
   /* padding: 24px; */
   background-color: transparent;
@@ -76,10 +76,16 @@ img {
   flex-direction: column;
   border-radius: 8px;
   padding: 24px;
-  width: 408px;
+  /* width: 408px; */
   height: 296px;
   background: #fff;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 550px) {
+  .feedback-form {
+    width: 408px;
+  }
 }
 
 label {
@@ -93,10 +99,20 @@ label {
   color: #2e2f42;
 }
 
+@media screen and (max-width: 550px) {
+  label {
+    width: 250px;
+  }
+
+  form {
+    width: 250px;
+  }
+}
+
 .feedback-form-input {
   border: 1px solid #808080;
   border-radius: 4px;
-  width: 360px;
+  /* width: 360px; */
   height: 40px;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -105,10 +121,16 @@ label {
 .feedback-form-message {
   border: 1px solid #808080;
   border-radius: 4px;
-  width: 360px;
+  /* width: 360px; */
   height: 80px;
   resize: none;
   margin-bottom: 16px;
+}
+
+@media screen and (max-width: 550px) {
+  .feedback-form-message {
+    height: 120px;
+  }
 }
 
 .feedback-form-submit {
@@ -132,3 +154,4 @@ label {
   transform: scale(1.05);
   background-color: #6C8CFF;
 }
+
